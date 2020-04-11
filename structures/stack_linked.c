@@ -30,12 +30,12 @@ int main(void) {
 }
 
 struct stackNode *newNode(int data) {
-    stackNode *stack = malloc(sizeof(stackNode));
-    if (stack != NULL) {
-        stack->data = data;
-        stack->next = NULL;
+    stackNode *n = malloc(sizeof(stackNode));
+    if (n != NULL) {
+        n->data = data;
+        n->next = NULL;
     }
-    return stack;    
+    return n;    
 }
 
 void push(stackNode **stack, int data) {

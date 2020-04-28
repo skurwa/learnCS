@@ -65,7 +65,7 @@ int dequeue(queue* q) {
         q->in = NULL;
     }
     if (q->out == NULL) {
-        return -1234567;
+        return -123456789;
     }
     queueNode *tmp = q->out;
     int outData = tmp->data;
